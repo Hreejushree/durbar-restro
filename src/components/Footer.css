@@ -1,0 +1,54 @@
+.footer {
+  background: var(--dark-2);
+  border-top: 1px solid rgba(201, 168, 76, 0.12);
+  padding: 70px 5% 30px;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+.footer-brand {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.2rem;
+  color: var(--gold);
+  line-height: 1;
+}
+.footer-tagline {
+  display: block;
+  font-size: 0.65rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--light-muted);
+  margin-bottom: 14px;
+}
+.footer-logo-col p { font-size: 0.85rem; color: var(--light-muted); line-height: 1.8; margin-bottom: 22px; }
+.footer-col h4 { font-family: 'Playfair Display', serif; font-size: 1rem; margin-bottom: 18px; color: var(--light); }
+.footer-col ul { list-style: none; padding: 0; }
+.footer-col ul li { margin-bottom: 10px; font-size: 0.85rem; color: var(--light-muted); }
+.footer-col ul li a { color: var(--light-muted); text-decoration: none; transition: color 0.3s; }
+.footer-col ul li a:hover { color: var(--gold); }
+.footer-col .day { color: var(--light-muted); font-size: 0.82rem; }
+.footer-col .hours-time { color: var(--gold); font-size: 0.82rem; }
+.footer-contact-item { display: flex; gap: 10px; font-size: 0.84rem; color: var(--light-muted); margin-bottom: 12px; align-items: flex-start; }
+.footer-contact-item span:first-child { color: var(--gold); flex-shrink: 0; }
+.footer-contact-item a { color: var(--light-muted); text-decoration: none; transition: color 0.3s; }
+.footer-contact-item a:hover { color: var(--gold); }
+.social-links { display: flex; gap: 12px; }
+.social-link {
+  width: 40px; height: 40px; border-radius: 50%;
+  border: 1.5px solid rgba(201, 168, 76, 0.3);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--light-muted); font-size: 0.9rem;
+  transition: all 0.3s; text-decoration: none;
+}
+.social-link:hover { background: var(--gold); border-color: var(--gold); color: var(--dark); transform: translateY(-3px); }
+.footer-bottom {
+  border-top: 1px solid rgba(201, 168, 76, 0.1);
+  padding-top: 24px;
+  display: flex; justify-content: space-between; align-items: center;
+  font-size: 0.8rem; color: var(--light-muted); flex-wrap: wrap; gap: 10px;
+}
+@media (max-width: 1024px) { .footer-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 600px) { .footer-grid { grid-template-columns: 1fr; gap: 28px; } }
